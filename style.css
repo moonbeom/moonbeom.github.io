@@ -199,7 +199,7 @@ body.scrolled nav.hidden {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #0b1728;
+  background-color: #081b35;
   padding-top: 3em;
   padding-bottom: 5em;
   margin-top: auto;
@@ -584,6 +584,89 @@ html {
   flex-direction: column;
   background-color: #0f1a2f;
 }
+
+#contact {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #151239;
+  padding: 8em 0 5em;
+  margin-top: auto;
+  color: white;
+  position: relative;
+}
+
+.svgcolor-light {
+  position:absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+}
+
+.contact-container {
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.svgcolor-light {
+  fill: white;
+  stroke: white;
+}
+
+.contact-heading {
+  font-size: 2em;
+  margin-bottom: 1em;
+  position:relative;
+
+}
+
+.contact-content {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+.contact-message-box {
+  background-color: #26264F;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+#success {
+  display: none;
+  color: #4CAF50;
+  margin-bottom: 1em;
+}
+
+.button {
+  background-color: #0c0239;
+  color: white;
+  position: relative;
+  top: 10px; 
+  width: 50%;
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+
 
 .footer-container {
   display: flex;
