@@ -6,15 +6,15 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
   background-color: #0a1424;
@@ -28,24 +28,28 @@
   color: #e8e8e8;
   animation: move 5s infinite;
 }
+
 @keyframes move {
   0% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-10px);
   }
+
   100% {
     transform: translateY(0);
   }
 }
+
 #header #button {
   -webkit-animation: fadeIn ease 2s;
-          animation: fadeIn ease 2s;
+  animation: fadeIn ease 2s;
   -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
   position: absolute;
   bottom: 23em;
   border: none;
@@ -61,7 +65,7 @@
   color: white;
   border-radius: 10px;
   -webkit-box-shadow: 0px 7px #313881;
-          box-shadow: 0px 7px #313881;
+  box-shadow: 0px 7px #313881;
 }
 
 #header #button img {
@@ -70,27 +74,27 @@
 
 #header #button:hover {
   -webkit-box-shadow: 0 10px #313881;
-          box-shadow: 0 10px #313881;
+  box-shadow: 0 10px #313881;
   -webkit-transform: translateY(-3px);
-          transform: translateY(-3px);
+  transform: translateY(-3px);
   -webkit-transition-duration: 200ms;
-          transition-duration: 200ms;
+  transition-duration: 200ms;
 }
 
 #header #button:hover img {
   -webkit-animation-duration: 700ms;
-          animation-duration: 700ms;
+  animation-duration: 700ms;
   -webkit-animation-name: swing;
-          animation-name: swing;
+  animation-name: swing;
   -webkit-animation-iteration-count: once;
-          animation-iteration-count: once;
+  animation-iteration-count: once;
 }
 
 #header #button:active {
   -webkit-box-shadow: 0 3px #313881;
-          box-shadow: 0 3px #313881;
+  box-shadow: 0 3px #313881;
   -webkit-transform: translateY(6px);
-          transform: translateY(6px);
+  transform: translateY(6px);
 }
 
 @media screen and (max-width: 900px) and (min-width: 600px) {
@@ -98,10 +102,12 @@
     padding: 4em 2em;
     height: auto;
   }
+
   #header #wdc {
     margin-top: 3em;
     margin-bottom: 1em;
   }
+
   #header #button {
     position: relative;
   }
@@ -146,12 +152,14 @@ nav.fixed {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a box shadow when fixed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Optional: Add a box shadow when fixed */
 }
 
 
 nav.hidden {
-  top: -50px; /* 변경된 부분: 숨길 때 상단에서 숨김 */
+  top: -50px;
+  /* 변경된 부분: 숨길 때 상단에서 숨김 */
 }
 
 body.scrolled nav {
@@ -170,6 +178,7 @@ body.scrolled nav.hidden {
     padding: 3em 1em;
     height: auto;
   }
+
   #header #button {
     display: none;
   }
@@ -184,13 +193,13 @@ body.scrolled nav.hidden {
 #about #about-text {
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
-          align-items: center;
+  align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 39vh;
   padding: 3em 0em;
 }
@@ -253,15 +262,19 @@ body.scrolled nav.hidden {
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  width: 30%; /* Adjust the width as needed */
+  width: 30%;
+  /* Adjust the width as needed */
   margin-bottom: 2em;
-  position: relative; /* Added position relative */
+  position: relative;
+  /* Added position relative */
 }
 
 .skill-box img {
-  width: 70px; /* Adjust the width of the images */
+  width: 70px;
+  /* Adjust the width of the images */
   height: auto;
-  margin: 10px; /* Adjust the margin between images */
+  margin: 10px;
+  /* Adjust the margin between images */
 }
 
 .skill-title {
@@ -279,6 +292,7 @@ body.scrolled nav.hidden {
     height: auto;
     padding: 5em 3em;
   }
+
   #skill #go {
     display: none;
   }
@@ -291,7 +305,7 @@ body.scrolled nav.hidden {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -302,35 +316,35 @@ html {
   height: 20vh;
   width: 65%;
   background-color: #fbfbfb;
-  font-size:xx-large;
+  font-size: xx-large;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   border-radius: 80px;
 }
 
 #about-me .info {
-  color: #5865f3; 
-  
+  color: #5865f3;
+
   display: flex;
   -webkit-box-pack: center;
-  
+
   -webkit-box-align: center;
-  
+
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal; 
+  -webkit-box-direction: normal;
   flex-direction: column;
   justify-content: space-evenly;
 }
@@ -350,7 +364,8 @@ html {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  -webkit-box-pack: justify; /* 이 부분은 중복이므로 제거할 수 있습니다. */
+  -webkit-box-pack: justify;
+  /* 이 부분은 중복이므로 제거할 수 있습니다. */
   font-weight: 800;
   color: #000000;
   font-size: clamp(0.9rem, 1vw, 2rem);
@@ -373,8 +388,11 @@ html {
   }
 }
 
-#about-me .info h1, #about-me .info h5, #about-me .info img {
-  text-align: center; /* 텍스트 중앙 정렬 */
+#about-me .info h1,
+#about-me .info h5,
+#about-me .info img {
+  text-align: center;
+  /* 텍스트 중앙 정렬 */
 }
 
 
@@ -386,21 +404,23 @@ html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     text-align: center;
     width: 100%;
   }
+
   .info {
     padding: 1em 1.5em;
   }
+
   .arw img {
     display: none;
   }
@@ -414,19 +434,21 @@ html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
+
   .info {
     padding: 2em 0;
   }
+
   /* .arw img {
     display: none;
   } */
@@ -456,7 +478,7 @@ html {
 #project .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   background-color: white;
   padding: 2em;
@@ -494,13 +516,12 @@ html {
 
 #project .project-container {
   position: relative;
-  width: 30%;
+  width: 31em;
   overflow: hidden;
 }
 
 #project .carousel {
   display: flex;
-  overflow: hidden;
   border-radius: 10px;
   width: 100%;
   transition: transform 0.5s ease-in-out;
@@ -511,21 +532,16 @@ html {
   width: 100%;
 }
 
-#project .slide:first-child {
-  -webkit-transform: translateX(0%);
-  transform: translateX(0%); /* 첫 번째 이미지 표시 */
-}
-
 #project .project-image {
   width: 100%;
   box-sizing: border-box;
-  /* padding: 0.5em; */
+  padding: 0.5em;
 }
 
 #project .project-image img {
   max-width: 100%;
   height: auto;
-  /* border-radius: 5px; */
+  border-radius: 5px;
 }
 
 #project .carousel-navigation {
@@ -550,14 +566,14 @@ html {
 }
 
 /* Add this style for active link */
-#project .carousel-navigation .Projects_page__zHIqO {
+/* #project .carousel-navigation .Projects_page__zHIqO {
   color: #5865f3;
   font-weight: bold;
 }
 
 #project .carousel-navigation .Projects_page__zHIqO::after {
   background-color: #5865f3;
-}
+} */
 
 .project-description {
   margin-top: 2em;
@@ -597,11 +613,11 @@ html {
 }
 
 .svgcolor-light {
-  position:absolute;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  
+
 }
 
 .contact-container {
@@ -618,7 +634,7 @@ html {
 .contact-heading {
   font-size: 2em;
   margin-bottom: 1em;
-  position:relative;
+  position: relative;
 
 }
 
@@ -655,18 +671,12 @@ textarea {
   background-color: #0c0239;
   color: white;
   position: relative;
-  top: 10px; 
+  top: 10px;
   width: 50%;
   height: 100%;
   border: none;
   cursor: pointer;
 }
-
-.button:hover {
-  background-color: #45a049;
-}
-
-
 
 .footer-container {
   display: flex;
@@ -706,18 +716,22 @@ textarea {
     -webkit-transform: rotate(15deg);
     transform: rotate(15deg);
   }
+
   40% {
     -webkit-transform: rotate(-10deg);
     transform: rotate(-10deg);
   }
+
   60% {
     -webkit-transform: rotate(5deg);
     transform: rotate(5deg);
   }
+
   80% {
     -webkit-transform: rotate(-5deg);
     transform: rotate(-5deg);
   }
+
   99% {
     -webkit-transform: rotate(0deg);
     transform: rotate(0deg);
@@ -728,6 +742,7 @@ textarea {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
