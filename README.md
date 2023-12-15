@@ -2,14 +2,15 @@
 
 ---
 
-##1. 프로젝트 소개:
+## 1. 프로젝트 소개:
+
 저의 프로젝트는 취업을 위한 개인 포트폴리오 사이트로, 제 경력, 프로젝트 경험 및 기술 스택을 간결하게 소개하고자 합니다.
 
 ![Alt text](image.png)
 
 ---
 
-##2. 기술스택:
+## 2. 기술스택:
 
 - HTML
 - JavaScript
@@ -24,6 +25,6 @@
 
 ![Alt text](image-1.png)
 
-##https://github.com/moonbeom/portfolio
+## https://github.com/moonbeom/portfolio
 
 ---
