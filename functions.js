@@ -136,11 +136,15 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     })
   })
-
   const projectCarousel = document.getElementById("projectCarousel")
   const prevArrow = document.querySelector(".prev-arrow")
   const nextArrow = document.querySelector(".next-arrow")
   const slides = document.querySelectorAll(".slide")
+  const projectCarousel2 = document.getElementById("projectCarousel2")
+  const slides2 = document.querySelectorAll(".slide2")
+  const prevArrow2 = document.querySelector(".prev-arrow2")
+  const nextArrow2 = document.querySelector(".next-arrow2")
+  let counter2 = 0
   let counter = 0
 
   prevArrow.addEventListener("click", () => {
@@ -167,10 +171,44 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCarousel()
   })
 
+  prevArrow2.addEventListener("click", () => {
+    if (counter2 > 0) {
+      slides2[counter2].classList.remove("active")
+      counter2--
+    } else {
+      slides2[counter2].classList.remove("active")
+      counter2 = slides2.length - 1
+    }
+    slides2[counter2].classList.add("active")
+    updateCarousel2()
+  })
+
+  nextArrow2.addEventListener("click", () => {
+    if (counter2 < slides2.length - 1) {
+      slides2[counter2].classList.remove("active")
+      counter2++
+    } else {
+      slides2[counter2].classList.remove("active")
+      counter2 = 0
+    }
+    slides2[counter2].classList.add("active")
+    updateCarousel2()
+  })
+
+  function updateCarousel2() {
+    const translateXValue2 = -counter2 * 100 + "%"
+    projectCarousel2.style.transform = `translateX(${translateXValue2})`
+  }
+
+  // 추가: projectCarousel2의 슬라이드에 "active" 클래스를 추가하여 첫 번째 슬라이드를 표시합니다.
+  slides2[counter2].classList.add("active")
+
+  updateCarousel2()
+
   function updateCarousel() {
     const translateXValue = -counter * 100 + "%"
     projectCarousel.style.transform = `translateX(${translateXValue})`
   }
 
-  updateCarousel() // added to display first image correctly
+  updateCarousel()
 })
