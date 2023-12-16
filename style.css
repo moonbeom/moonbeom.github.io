@@ -514,11 +514,42 @@ html {
   transform: translateY(6px);
 }
 
-#project .project-container {
+#project .project-container,
+#project .project2-container {
   position: relative;
   width: 31em;
   overflow: hidden;
 }
+
+#project .project-container .carousel,
+#project .project2-container .carousel {
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+#project .project-container .slide,
+#project .project2-container .slide {
+  flex: 0 0 auto;
+  width: 100%;
+}
+
+#project .project-container .project-image,
+#project .project2-container .project2-image {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+
+#project .project-container .project-image img,
+#project .project2-container .project2-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+
 
 #project .carousel {
   display: flex;
@@ -548,7 +579,7 @@ html {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-top: 1em;
+  margin:auto;
 }
 
 #project .carousel-navigation .prev-arrow,
@@ -592,6 +623,30 @@ html {
 .project-description {
   background-color: white;
 }
+
+#project .project2-image {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+}
+
+#project .project2-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project2-description {
+  margin-top: 2em;
+  text-align: center;
+  color: #333;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
 
 #about-me-baner {
   display: flex;
